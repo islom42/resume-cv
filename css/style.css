@@ -540,12 +540,16 @@ body.dark{
     box-sizing: border-box;
 }
 .container {
-    width: 880px;
+    width: 800px;
     margin: 5rem auto;
     border-radius: 15px solid;
     box-shadow: var(--outer-shadow);
-    padding: 1.87rem;
-    border-radius: 5px;
+    padding: 2.5rem;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
 }
 .outer-shadow {
     -webkit-box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
@@ -654,6 +658,103 @@ a {
 /* About me styles */
 
 /* Info styles */
-
+.info-card {
+  padding: 6.25rem 0;
+}
+.info-card__hobbies h2 {
+  text-align: center;
+  padding: 2rem 0;
+}
+.info-card__hobbies ol {
+  list-style: none;
+}
+.info-card__hobbies ol li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--text-black-600);
+}
+table {
+  width: 100%;
+}
+table thead {
+  text-align: left;
+}
+table td,
+table th {
+  padding-bottom: 1rem;
+}
+tbody tr {
+  border-bottom: 1px solid ;
+}
+.info-card__experience h2 {
+  text-align: center;
+  padding: 2rem 0;
+}
 /* Info styles */
+
+/* Contact styles */
+.contact {
+  padding-top: 3.12rem;
+}
+.contact h2 {
+  padding: 2rem 0;
+  text-align: center;
+}
+.contact label {
+  display: block;
+  color: var(--bg-black-700);
+  font-weight: bold;
+}
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.contact textarea {
+  resize: none;
+  width: 100%;
+  overflow: auto;
+  background: transparent;
+  border: none;
+}
+.contact textarea:focus {
+  border: none;
+  outline: none;
+}
+.contact .hover-in-shadow {
+  border-radius: 30px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.contact .input-group > div {
+  width: 48%;
+}
+.contact input {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  padding: 0 0.93rem;
+  color: var(--bg-black-700);
+}
+.contact input:focus {
+  border: none;
+  outline: none;
+}
+/* Contact styles */
+
+/* Footer styles */
+.footer {
+  padding-top: 3.12rem;
+  text-align: center;
+  color: var(--text-black-600);
+}
+.footer a {
+  color: var(--text-black-300);
+}
+/* Footer styles */
+
+
 

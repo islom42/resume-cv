@@ -51,7 +51,7 @@
         </ul>
       </div>
       <div class="info-card__experience">
-        <table width="500" border="1">
+        <table>
           <h2>My experience</h2>
           <thead>
             <tr>
@@ -86,23 +86,38 @@
     <section id="contact" class="contact">
       <h2>Get in touch</h2>
       <form action="/server.php" method="get">
-        <div>
-          <label for="fname">Your name</label>
-          <input type="text" placeholder="Your name" id="fname">
-        </div>
-        <div>
-          <label for="email">Your email</label>
-          <input type="text" placeholder="example@gmail.com" id="email">
-        </div>
-        <div>
-          <label for="subject">Your message</label> <br>
-          <textarea placeholder="Your message" id="subject"> </textarea>
+        <div class="input-group">
+          <div class="w-50">
+            <div class="hover-in-shadow outer-shadow">
+              <input type="text" placeholder="Your name" id="fname">
+            </div>
+            <div class="hover-in-shadow outer-shadow" id="email">
+              <input type="text" placeholder="example@gmail.com" >
+            </div>
+          </div>
+          <div class="hover-in-shadow outer-shadow">
+           <textarea name="message" placeholder="Type your message" class="w-50"></textarea>
+          </div>
         </div>
         <button class="btn hover-in-shadow" type="submit">Send message</button>
-
       </form>
     </section>
     <!-- Contact section -->
+
+    <!-- Footer section -->
+    <footer id="footer" class="footer">
+      <div class="footer__info">
+        <p>
+          Made with love by
+          <a href="https://github.com/islomnumanovuz">Islom Numanov</a>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-heart"></i>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer section -->
+
     </div>
   </body>
 </html>
